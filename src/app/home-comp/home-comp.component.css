@@ -1,0 +1,123 @@
+.mainview
+{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Clouds
+{
+    background:url(../../assets/images/clouds2.jpg) ;
+    background-size: 100% 100%;
+    color:#fff;
+}
+.Clear
+{
+    background:url(../../assets/images/sunny2.jpg) ;
+    background-size: 100% 100%;
+    color:#fff;
+}
+.Mist
+{
+    background:url(../../assets/images/fog.jpg) ;
+    background-size: 100% 100%;
+    color:#fff;
+}
+.light
+{
+    background:url(../../assets/images/light1.webp) ;
+    background-size: 100% 100%;
+    color:#fff;
+}
+.wind
+{
+    background:url(../../assets/images/wind.jpg) ;
+    background-size: 100% 100%;
+    color:#fff;
+}
+.Snow
+{
+    background:url(../../assets/images/snow2.jpg) ;
+    background-size: 100% 100%;
+    color:#fff;
+}
+.Rain
+{
+    background:url(../../assets/images/Rainy.jpg) ;
+    background-size: 100% 100%;
+    color:#fff;
+}
+.Thunderstorm
+{
+    background:url(../../assets/images/Stormy.jpg) ;
+    background-size: 100% 100%;
+    color:#fff;
+}
+.left
+{
+    min-width: 65vw;
+    max-width: 65vw;
+    min-height: 100vh;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    backdrop-filter: blur(2px) saturate(200%);
+    -webkit-backdrop-filter: blur(2px) saturate(200%);
+    background-color: rgba(14, 13, 13, 0.185);
+    border-radius: 12px;
+    border-bottom-right-radius:0px;
+    border-top-right-radius:0px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    color: #fefefe;
+    padding: 5vh 0vw 5vh 0vw;  
+}
+.logo
+{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    user-select: none;
+    margin: auto auto;
+}
+.climate
+{
+    min-width:100%;
+    min-height: 50vh;
+    border-radius: 12px;
+    padding: 20px;
+    color: #fff;
+    font-weight: 900;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+}
+.date
+{
+    font-size: 1.2rem;
+}
+.town
+{
+    min-width: 100%;
+    font-size: 2.5rem;
+}
+.degree
+{
+    font-size: 5rem;
+    text-align: center;
+}
+.right
+{
+    min-width: 35vw;
+    max-width: 35vw;
+    min-height: 100vh;
+    max-height: fit-content;
+    backdrop-filter: blur(2px) saturate(200%);
+    -webkit-backdrop-filter: blur(2px) saturate(200%);
+    background-color: rgba(22, 21, 21, 0.425);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-bottom-left-radius:0px;
+    border-top-left-radius:0px;
+    color: #fff;
+}

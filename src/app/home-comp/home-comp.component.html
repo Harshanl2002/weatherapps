@@ -1,0 +1,13 @@
+<section class="mainview {{climate.weather[0].main}}" >
+    <div class="left ">
+        <div class="logo">{{title.toUpperCase()}}</div>
+        <div class="climate">
+            <div class="town">{{climate.name}},</div>
+            <div class="degree">{{round(climate.main.temp)}}&nbsp;°&nbsp;-&nbsp;{{climate.weather[0].main}}</div>
+            <div class="date">{{todate|date:'mediumDate'}}</div>
+        </div>
+    </div>
+    <div class="right ">
+
+    </div>
+</section>
