@@ -3,11 +3,11 @@
     <div class="left ">
         <div class="logo">{{title.toUpperCase()}}</div>
         <div class="climate">
-            <div class="degree">{{round(climate.main.temp)}}&nbsp;°&nbsp;</div>
+            <div class="degree">{{round(climate.main.temp)}}°</div>
             <div class="town">{{climate.name}}</div>
-            <img src="{{url+geticon()+'@2x.png'}}" class="icon">
+            <img src="{{url+geticon()+'@2x.png'}}" class="icon" width="">
             <div class="date">&nbsp;&nbsp;&nbsp;&nbsp;{{getdate(climate.dt)|date:'short'}}</div>
-            <div class="disc">&nbsp;&nbsp;&nbsp;&nbsp;{{climate.weather[0].main}}</div>
+            <div class="disc">{{climate.weather[0].main}}</div>
         </div>
     </div>
     <div class="right ">
