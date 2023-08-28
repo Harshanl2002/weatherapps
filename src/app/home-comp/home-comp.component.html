@@ -21,5 +21,19 @@
         <ul class="list">
             <li *ngFor="let c of city" class="listele" (click)="display(c.id)" >{{c.name.toUpperCase()}}</li>
         </ul>
+        <table class="table">
+            <tr>
+                <td>Humidity</td>
+                <td>{{climate.main.humidity}}</td>
+            </tr>
+            <tr>
+                <td>Air pressure</td>
+                <td>{{climate.main.pressure}}</td>
+            </tr>
+            <tr>
+                <td>Wind speed</td>
+                <td>{{climate.wind.speed}}</td>
+            </tr>
+        </table>
     </div>
 </section>
