@@ -1,13 +1,25 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 <section class="mainview {{climate.weather[0].main}}" >
     <div class="left ">
         <div class="logo">{{title.toUpperCase()}}</div>
         <div class="climate">
-            <div class="town">{{climate.name}},</div>
-            <div class="degree">{{round(climate.main.temp)}}&nbsp;°&nbsp;-&nbsp;{{climate.weather[0].main}}</div>
-            <div class="date">{{todate|date:'mediumDate'}}</div>
+            <div class="degree">{{round(climate.main.temp)}}&nbsp;°&nbsp;</div>
+            <div class="town">{{climate.name}}</div>
+            <img src="{{url+geticon()+'@2x.png'}}" class="icon">
+            <div class="date">&nbsp;&nbsp;&nbsp;&nbsp;{{getdate(climate.dt)|date:'short'}}</div>
+            <div class="disc">&nbsp;&nbsp;&nbsp;&nbsp;{{climate.weather[0].main}}</div>
         </div>
     </div>
     <div class="right ">
-
+        <div  class="searchbar">
+            <input type="text" [(ngModel)]="text"  class="search" [placeholder]="place" (keydown.enter)="onsubmit()">
+            <button type="submit" class="button" (click)="onsubmit()"><span class="material-symbols-outlined" >
+            search
+            </span></button>
+        </div>
+        
+        <ul class="list">
+            <li *ngFor="let c of city" class="listele" (click)="display(c.id)" >{{c.name.toUpperCase()}}</li>
+        </ul>
     </div>
 </section>
