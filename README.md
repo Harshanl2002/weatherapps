@@ -29,3 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Output of the Project
 
  You can see the deployed page using [this Link.](https://harshanl2002.github.io/weatherapps/)
+ ![screenshot](https://github.com/Harshanl2002/weatherapps/blob/main/output/Screenshot%20(8).png)
